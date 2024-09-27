@@ -1,58 +1,66 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 網站標題 -->
-    <title>DAJUN的網站</title>
+    <title>About DAJUN的網站</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>
-        張蔡大鈞的自我介紹
-    </h1>
+    <div id="app">
+        <header class="profile-header">
+            <h1>DAJUN</h1>
+            <h2>張蔡大鈞</h2>
+            <h3>淡江大學資訊管理學系三年C班</h3>
+            <p>以下是我的自我介紹</p>
+        </header>
 
-    <p>
-        大家好我是資管3C的張蔡大鈞 學號是411631178
-    </p>
-
-    <SPan>
+        <img src="S__129302976.jpg" width="50%">
         
-        平常的興趣是打電腦
-    </SPan>
 
-    <a href="https://www.tku.edu.tw/">
-        這是我的大學TKU
-    </a>
+        <section class="education-qualifications card">
+            <h4>學歷</h4>
+            <ul>
+                <li>國中:花蓮縣立花崗國民中學</li>
+                <li>高中:國立花蓮高級中學</li>
+                <li>大學:淡江大學</li>
+            </ul>
+            <h5>興趣</h5>
+            <Ul>
+                <li>騎車</li>
+                <li>打電腦</li>
+                <li>打籃球</li>
+            </Ul>
+        </section>
 
-    <img src="S__129302976.jpg" alt="武嶺">
-    <p>我去武嶺拍的照片</p>
-    <ul>
-        <li>對自己的期許
+        <section class="contact card">
+            <h4>聯絡方式</h4>
+            <table>
+                <tr>
+                    <th>App</th>
+                    <th>關鍵字查詢</th>
+                </tr>
+                <tr>
+                    <td>Line</td>
+                    <td><a href="https://line.me/tw/">Dajun0306</a></td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td><a href="https://www.instagram.com/?hl=zh-">junn_0306</a></td>
+                </tr>
+            </table>
+        </section>
 
-        </li> 
-
-    </ul>
-    <ol>
-        <li>身體健康</li>
-    </ol>
-
-    <form action="/submit" method="post">
-        <label for="name"></label>
-        <input type="text" id="name" name="name">
-        <input type="submit" value="提交">
-    </form>
-
-    <table>
-    <tr>
-        <th>綽號</th>
-        <th>年齡</th>
-    </tr>
-    <tr>
-        <td>DAJUN</td>
-        <td>20</td>
-
-    </tr>
-    </table>
-
+        <section class="comments-section card">
+            <h4>留言</h4>
+            <form action="/submit" method="post">
+                <label for="comment">請留下...:</label>
+                <input type="text" id="comment" name="comment" placeholder="輸入留言">>
+            </form>
+        </section>
+    </div>
 </body>
+
 </html>
