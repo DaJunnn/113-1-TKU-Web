@@ -9,33 +9,32 @@
 </head>
 
 <body>
-    <div id="app">
-        <header class="profile-header">
-            <h1>DAJUN</h1>
-            <h2>張蔡大鈞</h2>
-            <h3>淡江大學資訊管理學系三年C班</h3>
-            <p>以下是我的自我介紹</p>
-        </header>
+    <header>
+        <h1>DAJUN</h1>
+        <h2>張蔡大鈞</h2>
+        <h3>淡江大學資訊管理學系三年C班</h3>
+        <p>以下是我的自我介紹</p>
+    </header>
 
-        <img src="S__129302976.jpg" width="50%">
-        
+    <main>
+        <img src="S__129302976.jpg" alt="Profile picture of DAJUN" width="50%">
 
-        <section class="education-qualifications card">
+        <section>
             <h4>學歷</h4>
             <ul>
-                <li>國中:花蓮縣立花崗國民中學</li>
-                <li>高中:國立花蓮高級中學</li>
-                <li>大學:淡江大學</li>
+                <li>國中: 花蓮縣立花崗國民中學</li>
+                <li>高中: 國立花蓮高級中學</li>
+                <li>大學: 淡江大學</li>
             </ul>
             <h5>興趣</h5>
-            <Ul>
+            <ul>
                 <li>騎車</li>
                 <li>打電腦</li>
                 <li>打籃球</li>
-            </Ul>
+            </ul>
         </section>
 
-        <section class="contact card">
+        <section>
             <h4>聯絡方式</h4>
             <table>
                 <tr>
@@ -52,15 +51,16 @@
                 </tr>
             </table>
         </section>
+    </main>
 
-        <section class="comments-section card">
-            <h4>留言</h4>
-            <form action="/submit" method="post">
-                <label for="comment">請留下...:</label>
-                <input type="text" id="comment" name="comment" placeholder="輸入留言">>
-            </form>
-        </section>
-    </div>
+    <footer>
+        <h4>想說點甚麼：</h4>
+        <form action="/submit" method="post">
+            <label for="comment">留言:</label>
+            <input type="text" id="comment" name="comment" required placeholder="輸入留言">
+            <input type="submit" value="提交">
+        </form>
+    </footer>
 </body>
 
 </html>

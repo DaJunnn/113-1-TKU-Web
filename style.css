@@ -1,103 +1,99 @@
-* {
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, p, ul, table {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #cacbcf, #36539100);
-    color: #333;
-    padding: 20px;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-#app {
-    max-width: 900px;
-    margin: 0 auto;
+header {
+    text-align: center;
     padding: 20px;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Poppins', sans-serif;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #856052;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: #0e1012;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-h3 {
-    color: #1c1a20;
-    text-align: center;
-    margin-bottom: 5px;
-}
-h4 {
-    color: #1c1a20;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h5 {
-    color: #1c1a20;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
-p {
-    text-align: center;
-    font-size: 1rem;
-    color: #572c10;
-    margin-bottom: 20px;
-}
-
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 1px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #f7f9f9;
-    color: #2c3e50;
-}
-
-
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-}
-
-table th {
-    background-color: #4c5255;
+    background: #3b363c;
     color: white;
 }
 
-table td a {
-    color: #1b408f;
-    text-decoration: none;
+h1, h2, h3 {
+    margin-bottom: 10px;
 }
 
 img {
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h4, h5 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f2f2f2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #27148aa8;
+    color: white;
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #218838;
 }
