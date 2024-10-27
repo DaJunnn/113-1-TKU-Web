@@ -1,66 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About DAJUN的網站</title>
+    <title>關於 DAJUN 的網站</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>DAJUN</h1>
-        <h2>張蔡大鈞</h2>
-        <h3>淡江大學資訊管理學系三年C班</h3>
-        <p>以下是我的自我介紹</p>
-    </header>
+    <div class="container">
+        <header class="header">
+            <h1>DAJUN</h1>
+            <h2>張蔡大鈞</h2>
+            <p>淡江大學資訊管理學系三年C班</p>
+        </header>
 
-    <main>
-        <img src="S__129302976.jpg" alt="Profile picture of DAJUN" width="50%">
+        <main class="content">
+            <img src="個人照.jpg" alt="DAJUN的個人照片" class="profile-pic">
 
-        <section>
-            <h4>學歷</h4>
-            <ul>
-                <li>國中: 花蓮縣立花崗國民中學</li>
-                <li>高中: 國立花蓮高級中學</li>
-                <li>大學: 淡江大學</li>
-            </ul>
-            <h5>興趣</h5>
-            <ul>
-                <li>騎車</li>
-                <li>打電腦</li>
-                <li>打籃球</li>
-            </ul>
-        </section>
+            <section class="info">
+                <h3>自我介紹</h3>
+                <h4>學歷</h4>
+                <ul>
+                    <li>國中: 花蓮縣立花崗國民中學</li>
+                    <li>高中: 國立花蓮高級中學</li>
+                    <li>大學: 淡江大學</li>
+                </ul>
 
-        <section>
-            <h4>聯絡方式</h4>
-            <table>
-                <tr>
-                    <th>App</th>
-                    <th>關鍵字查詢</th>
-                </tr>
-                <tr>
-                    <td>Line</td>
-                    <td><a href="https://line.me/tw/">Dajun0306</a></td>
-                </tr>
-                <tr>
-                    <td>Instagram</td>
-                    <td><a href="https://www.instagram.com/?hl=zh-">junn_0306</a></td>
-                </tr>
-            </table>
-        </section>
-    </main>
+                <h4>興趣</h4>
+                <ul>
+                    <li>騎車</li>
+                    <li>打電腦</li>
+                    <li>打籃球</li>
+                </ul>
+            </section>
 
-    <footer>
-        <h4>想說點甚麼：</h4>
-        <form action="/submit" method="post">
-            <label for="comment">留言:</label>
-            <input type="text" id="comment" name="comment" required placeholder="輸入留言">
-            <input type="submit" value="提交">
-        </form>
-    </footer>
+            <section class="contact">
+                <h4>聯絡方式</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>App</th>
+                            <th>帳號</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Line</td>
+                            <td><a href="https://line.me/tw/">Dajun0306</a></td>
+                        </tr>
+                        <tr>
+                            <td>Instagram</td>
+                            <td><a href="https://www.instagram.com/?hl=zh-">junn_0306</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <h4>想說點甚麼：</h4>
+            <form action="/submit" method="post">
+                <label for="name">留言:</label>
+                <input type="text" id="name" name="name" required>
+                <input type="submit" value="提交">
+            </form>
+        </footer>
+    </div>
 </body>
 
 </html>
